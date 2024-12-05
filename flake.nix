@@ -19,6 +19,7 @@
             libgcc
             cargo
             rustc
+            python312Packages.autopep8
           ];
 
           RUST_SRC_PATH = pkgs.rustPlatform.rustLibSrc;

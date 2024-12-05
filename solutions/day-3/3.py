@@ -2,6 +2,7 @@ import re
 from functools import reduce
 from operator import mul
 
+
 def main() -> None:
     with open('input.in', 'r', encoding='utf8') as f:
         expression = f.read()
@@ -18,7 +19,8 @@ def main() -> None:
             case _:
                 res = reduce(mul, map(int, (match.group(1), match.group(2))))
                 ans1 += res
-                if do: ans2 += res
+                if do:
+                    ans2 += res
 
     print(f'Part 1: {ans1}')
     print(f'Part 2: {ans2}')

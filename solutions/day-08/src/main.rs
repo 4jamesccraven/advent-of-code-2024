@@ -79,7 +79,8 @@ fn main() {
          *          }
          *      }
          *      eprint!("\n");
-         */ }
+         *  }
+         */
 
         let ans1 = antinodes1.iter().count();
         let ans2 = antinodes2.iter().count();

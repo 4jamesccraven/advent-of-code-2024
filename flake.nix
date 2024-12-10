@@ -28,10 +28,9 @@
 
             real_time=$(cd "$dir" && { time cargo run --release > /dev/null 2>&1; } 2>&1 | grep real| awk '{print $2}')
 
-            minutes=$(echo "$real_time" | awk -F'm' '{print $1}')
             seconds=$(echo "$real_time" | awk -F'm' '{print $2}' | sed 's/s//')
 
-            printf ",\"%02d:%05.2f\"\n" $minutes $seconds
+            echo ",$seconds"
           done
         '';
 

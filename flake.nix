@@ -43,6 +43,7 @@
             cargo
             rustc
             python312Packages.autopep8
+            python312Packages.numpy # for visualiser only
           ];
 
           RUST_SRC_PATH = pkgs.rustPlatform.rustLibSrc;

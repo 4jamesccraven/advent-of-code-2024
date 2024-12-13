@@ -2,5 +2,10 @@
 name = "day-12"
 version = "0.1.0"
 edition = "2021"
+default-run = "day-12"
 
 [dependencies]
+
+[[bin]]
+name = "visualise"
+path = "src/visualise.rs"
